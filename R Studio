@@ -59,13 +59,21 @@ The total cost of ownership can be a useful statistic in a number of situations,
 
 ## Table with Invented Costs:
 Tabla con costos para crear mi emprendimiento (faltan algunos costos, como escritos, mesas, etc.)
+
+A continuación se realiza una tabla de costos para iniciar un microemprendimiento de impresión 3D:
+
  Unidades | Elemento | Precio unitario | Precio Total |
-|:-------:|:------:|:-----------:|:---------:|
+|:-------:|:------|:-----------:|:---------:|
 | 5 | Computadora | 600.000 |3.000.000 |
 | 1 | Servidor | 1.000.000 | 1.000.000 |
-| 5 | Licencia Microsoft | 200.000 | 1.000.000 |
-| 3 | Mata fuego | 100.000 | 300.000 |
-| 5 | Antivirus | 50.000 | 250.000 |
-| 5 | Seguro por empleado | 300.000 | 1.500.000 |
 | 5 | Impresora 3D | 300.000 | 1.500.000 |
-|Monto Total|||8.500.000|
+|5 | Licencias de Microsoft|200.000|1.000.000| 
+|5|Antivirus|50.000|250.000| 
+|2|Extintores de incendios|70.000|140.000|
+|10|Filamentos para impresión 3D|20.000|200.000|
+|6|Escritorios|65.000|390.000|
+|6|Sillas de oficina|68.000|408.000|
+
+|Monto Total|||7.888.000|
+
+Para armar una tabla como la anterior para identificar las columnas separamos con barras (|texto|) lo que va dentro de cada columna y cada renglón en nuestro código significará una fila de la tabla. 
