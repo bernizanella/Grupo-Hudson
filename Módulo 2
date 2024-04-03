@@ -45,13 +45,6 @@ output: rticles::arxiv_article
 
 # Estructura de datos
 
-## Suma 
-
-## Resta
-
-## Multiplicación
-
-## División
 
 # Vectores
 
@@ -64,6 +57,12 @@ mi_vector_b <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)#seq(1:16)
 mi_vector_a
 mi_vector_b
 ```
+
+## Suma de vectores 
+```{r}
+sum(mi_vector_a,mi_vector_b)
+```
+
 # Matrices
 Las matrices se parecen a los vectores, pero tienen filas y columnas.
 Se alimentan de vectores.
@@ -99,18 +98,7 @@ mi_matriz_c[-2, ]
 
 # Tiempo que se demora en ejecutar un algoritmo
 
-Primero armo el vector con 10000 valores:
-
-```{r}
-mi_vector_d <- seq(1:100)
-```
-
-Luego armo la matriz de 10x10 con el vector armado anteriormente:
-```{r}
-mi_matriz_e <- matrix(mi_vector_d, nrow=10, byrow=TRUE)
-```
-
-Lo descripto anteriormente no es necesario, directamente se escribe dentro del siguiente comando:
+## Usando Sys.time
 
 Cálculo del tiempo que se demora en armar la matriz el algoritmo:
 
@@ -122,6 +110,17 @@ end_time <- Sys.time()
 end_time - start_time
 ```
 
+## Método tictoc
+
+```{r}
+library(tictoc)
+mi_vector_f <- seq(1:100)
+tic("Tiempo que se demora en hacer la matriz g")
+mi_matriz_g <- matrix(mi_vector_d, nrow=10, byrow=TRUE)
+mi_vector_f
+mi_matriz_g
+toc()
+```
 # Introduction
 
 Here goes an introduction text
